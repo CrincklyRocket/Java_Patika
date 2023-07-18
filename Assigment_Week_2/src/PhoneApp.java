@@ -15,13 +15,12 @@ public class PhoneApp {
     }
 
     public double calculateTotalPrice(SmartPhone[] smartPhoneArray){
-
         double total = 0.0;
         for (int i = 0; i < smartPhoneArray.length; i++){
             total += smartPhoneArray[i].price;
             System.out.println(total);
         }
-    return total;
+        return total;
     }
 }
 
