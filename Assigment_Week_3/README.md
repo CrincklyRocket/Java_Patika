@@ -17,7 +17,8 @@ Projede kullanılan sınıflar ve arayüzler aşağıdaki gibidir
 
 Ödev:
 
-![asdasd](https://github.com/CrincklyRocket/Java_Patika/assets/79373396/ec90ad7c-d1be-40a0-a6e9-2e6613294787)
+![Gamepads](https://github.com/CrincklyRocket/Java_Patika/assets/79373396/dbaaa2b7-1823-41d3-a754-de1e7f60c7c4)
+
 
   Yukarıda 2 adet oyun kontrolcüsü var. Birisi XBOX’ın birisi de Playstation’ın. Bu cihazlar diğer
 platformlarda çalışamıyor. Yani XBOX sadece XBOX’da, Playstation sadece Playstation’da
