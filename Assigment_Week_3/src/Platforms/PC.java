@@ -6,6 +6,7 @@ public class PC {
     boolean isDeviceOpen = false;
     boolean isCabled = false;
 
+    //Bilgisayar'ın Açan metot.
     public void open() {
         if (isDeviceOpen) {
             throw new RuntimeException("Bilgisayar zaten çalışıyor.");
@@ -13,7 +14,7 @@ public class PC {
         System.out.println("Bilgisayar açılıyor");
         isDeviceOpen = true;
     }
-
+    //Bilgisayar'ın Kapatan metot.
     public void shutdown() {
         if (!isDeviceOpen) {
             throw new RuntimeException("Bilgisayar zaten kapalı.");
@@ -22,9 +23,11 @@ public class PC {
         isDeviceOpen = false;
     }
 
+    //Kontrolcünün bilgisayara bağlanıdığını belirten metot.
     public void connectControllerCable(){
         isCabled = true;
     }
+    //Bilgisayara Kontrolcüyü ekleyen metot.
     public void addController(GameController controller) {
         if (!isDeviceOpen) {
             throw new RuntimeException("Bilgisayar kapalıyken kontrolcü ekleyemezsin");
@@ -33,7 +36,7 @@ public class PC {
         }
         System.out.println("Bilgisayar eklendi.");
     }
-
+    
     public void playGame() {
         if (!isDeviceOpen) {
             throw new RuntimeException("Oynayabilmek için Bilgisayar açık olması gerekir");
