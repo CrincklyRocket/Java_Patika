@@ -1,34 +1,12 @@
-# Proje: Telefon Uygulaması
+# Telefon Uygulaması
 
-## Sınıflar
+Projede kullanılan sınıflar aşağıdaki gibidir
 
-### Product
+-   `Product` Sınıfı: Bu sınıf telefon ürünlerinin temel özelliklerini içeren bir üst sınıftır. İçerisinde "storage, ram, camera"price, ID, name, brand bilgilerini içerir içerir.
+-   `Phone` Sınıfı: Product sınıfından inherit edilmiş alt sınıftır ve Ek olarak "phoneNumber" bilgisini içerir içerir.
+-   `SmartPhone` Sınıfı: Phone sınıfından inherit edilmiş alt sınıftır ve Ek olarak "storage, ram, camera" bilgilerini içerir içerir. 
+-   `PhoneApp` Sınıfı: .
 
-Product sınıfı, telefon ürünlerinin temel özelliklerini içeren bir üst sınıftır.
-
-#### Özellikler
-
-- id (int): Ürünün benzersiz kimliği.
-- price (double): Ürünün fiyatı.
-- name (String): Ürünün adı.
-
-### Phone
-
-Phone sınıfı, Product sınıfından miras alan bir alt sınıftır ve telefonların ek özelliklerini içerir.
-
-#### Ek Özellikler
-
-- phoneNumber (String): Telefonun numarası.
-
-### SmartPhone
-
-SmartPhone sınıfı, Phone sınıfından miras alan bir alt sınıftır ve akıllı telefonların ek özelliklerini içerir.
-
-#### Ek Özellikler
-
-- storage (int): Akıllı telefonun depolama kapasitesi.
-- ram (int): Akıllı telefonun RAM miktarı.
-- camera (int): Akıllı telefonun kamera çözünürlüğü.
 
 ## Sınıf Tanımları
 
