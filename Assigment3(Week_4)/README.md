@@ -1,6 +1,6 @@
 # Futbol İstatistik Uygulaması
 
-Bu uygulamada, futbol istatistiklerini yönetmek ve sorgulamak için PostgreSQL kullanarak gerçekleştirilen bir Database uygulamasıdır. İlk dosya içerisinde kullanılacak tabloların "CREATE" Scriptleri, ikinci dosyada test amaçlı oluşturulmuş random dataların, tablolara injection Scriptleri ve son olarak Database'in kullanılabilirliğini değerledirmek adına 7 adet Query'nin yer aldığı sorgu dosyası yer almaktadır.
+Bu uygulama, futbol istatistiklerini yönetmek ve sorgulamak için PostgreSQL kullanarak gerçekleştirilen bir Database uygulamasıdır. İlk dosya içerisinde kullanılacak tabloların "CREATE" Scriptleri, ikinci dosyada test amaçlı oluşturulmuş random dataların, tablolara injection Scriptleri ve son olarak Database'in kullanılabilirliğini değerledirmek adına 7 adet Query'nin yer aldığı sorgu dosyası yer almaktadır.
 
 ## Veritabanı Tabloları
 
