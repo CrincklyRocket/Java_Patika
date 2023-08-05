@@ -6,39 +6,41 @@ Bu uygulamada, futbol istatistiklerini yönetmek ve sorgulamak için PostgreSQL 
 
 Projede kullanılan tablolar ve alanlar aşağıda listelenmiştir:
 
-- **Country (Ülke) Tablosu**
+- **Ülke Tablosu**
     - id (PRIMARY KEY)
     - name
 
-- **Lig (League) Tablosu**
+- **League Tablosu**
     - id (PRIMARY KEY)
-    - adı
+    - name
     - id_country (FOREIGN KEY)
 
-- **Takim (Team) Tablosu**
+- **Team Tablosu**
     - id (PRIMARY KEY)
-    - adı
+    - name
     - id_league (FOREIGN KEY)
-    - kuruluş yılı
-    - attığı gol
-    - yediği gol
-    - puan
-    - seviye
+    - year_of_foundation
+    - scored_goal
+    - conceded_goal gol
+    - league_point
+    - league_standings
 
-- **Oyuncu (Player) Tablosu**
+- **Player Tablosu**
     - id (PRIMARY KEY)
-    - adı
-    - soyadı
-    - id_team (FOREIGN KEY)
-    - id_country (FOREIGN KEY)
-    - attığı gol
+    - first_name
+    - last_name
+    - id_Team (FOREIGN KEY)
+    - id_Country (FOREIGN KEY)
+    - player_scored_goal
 
 ## Query Örneği
 
 ### İsmi "Türkiye" olan ülkenin liglerinin listesi
 
 ```sql
-SELECT * FROM Lig WHERE id_country = (SELECT id FROM Country WHERE name = 'Türkiye');
+SELECT League.* FROM League 
+JOIN Country ON League.id_country = Country.id
+WHERE Country.name = 'Türkiye';
 ```
 
 ## Ödev Tanımı:
