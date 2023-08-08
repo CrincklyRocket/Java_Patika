@@ -7,7 +7,7 @@ Projede kullanılan sınıflar aşağıdaki gibidir
 -   `SmartPhone` Sınıfı: Phone sınıfından inherit edilmiş alt sınıftır ve Ek olarak "storage, ram, camera" bilgilerini içerir içerir. Sınıfta AllArgsConstructor ve default Constructer bulunmaktadır.
 -   `PhoneApp` Sınıfı: Sınıfın içersinde AllArgsConstructor kullanılarak 5 adet Akıllı telefon oluşturulmuştur. Ve double veri tipinde telefonların toplam değerini geri döndüren "calculateTotalPrice()" metodu tanımlanmıştır
 
-Ödev Tanımı:
+## Ödev Tanımı:
 
 |     Product    |            Phone              |      SmartPhone             |
 |----------------|-------------------------------|-----------------------------|
